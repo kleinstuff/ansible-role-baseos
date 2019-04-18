@@ -1,4 +1,8 @@
 ---
+- include: timezone.yml
+  tags:
+    - timezone
+
 - include: selinux.yml
   tags:
     - selinux
