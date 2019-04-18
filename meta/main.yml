@@ -13,10 +13,9 @@ galaxy_info:
       - 7
 
   galaxy_tags:
-    - EL
+    - el
     - elastic
     - apm
     - apm-server
 
 dependencies: []
-
