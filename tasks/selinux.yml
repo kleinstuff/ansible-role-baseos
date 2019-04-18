@@ -1,0 +1,14 @@
+---
+- name: ROLE BASEOS | SELINUX | Set selinux Status
+  selinux:
+    state: "{{ role_baseos__selinuxstatus }}"
+    policy: targeted
+
+- name: ROLE BASEOS | SELINUX | Allow listen on ports
+  seport:
+    ports: "{{ item }}"
+    proto: tcp
+    setype: ssh_port_t
+    state: present
+  with_items:
+    - "{{ role_baseos__sshports }}"

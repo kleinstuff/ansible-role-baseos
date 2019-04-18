@@ -1,0 +1,16 @@
+---
+- include: selinux.yml
+  tags:
+    - selinux
+
+- include: users.yml
+  tags:
+    - users
+
+- include: sudo.yml
+  tags:
+    - sudo
+
+- include: ssh_conf.yml
+  tags:
+    - ssh

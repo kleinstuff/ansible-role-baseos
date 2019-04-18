@@ -1,0 +1,4 @@
+---
+- name: ROLE BASEOS | TIMEZONE | Set timezone to {{ role_baseos__timezone }}
+  timezone:
+    name: '{{ role_baseos__timezone }}'

@@ -1,0 +1,11 @@
+---
+role_baseos__selinuxstatus: enforcing
+
+role_baseos__sshports:
+  - 22
+
+role_baseos__timezone: "America/Sao_Paulo"
+
+#role_baseos__users:
+  #  - { name: "user1", state: "present", groups: "ExtraGroupsForUser1", authorized_key: "ssh-rsa bigrsakey", jail: "no", AllowPass: "no", AllowTunnel: "yes" }
+  #  - { name: "user2", state: "present", groups: "ExtraGroupsForUser2", authorized_key: "ssh-rsa bigrsakey", jail: "no", AllowPass: "no", AllowTunnel: "yes" }

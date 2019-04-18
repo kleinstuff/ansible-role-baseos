@@ -1,0 +1,19 @@
+---
+- name: ROLE BASEOS | USERS | Creating users
+  user:
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+    #password: "{{ item.password }}"
+    groups: "{{ item.groups | default('') }}"
+    home: "{{ item.home | default(['/home/',item.name] | join ) }}"
+    shell: "{{ item.shell  | default('/bin/bash') }}"
+  with_items:
+    - "{{ role_baseos__users }}"
+
+- name: ROLE BASEOS | USERS | Set up authorized_keys
+  authorized_key:
+    user: "{{ item.name }}"
+    key: "{{ item.authorized_key }}"
+    exclusive: True
+  with_items:
+    - "{{ role_baseos__users }}"
