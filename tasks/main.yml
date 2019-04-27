@@ -18,3 +18,7 @@
 - include: ssh_conf.yml
   tags:
     - ssh
+
+- include: base_packages.yml
+  tags:
+    - packages

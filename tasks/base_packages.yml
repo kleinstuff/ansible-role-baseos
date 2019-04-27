@@ -1,0 +1,5 @@
+---
+- name: ROLE BASEOS | PACKAGES | Install basic packages
+  yum:
+    name: "{{ role_baseos__packages }}"
+    state: present
