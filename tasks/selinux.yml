@@ -11,6 +11,8 @@
     persistent: yes
   with_items:
     - "{{ role_baseos__sebooleans }}"
+  when:
+    - role_baseos__sebooleans is defined
 
 - name: ROLE BASEOS | SELINUX | Allow listen on ports
   seport:
