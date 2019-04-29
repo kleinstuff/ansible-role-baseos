@@ -1,0 +1,6 @@
+---
+- name: ROLE BASEOS | HOSTNAME | Set hostname to {{ role_baseos__hostname }}
+  hostname:
+    name: '{{ role_baseos__hostname }}'
+  when:
+    - role_baseos__hostname is defined

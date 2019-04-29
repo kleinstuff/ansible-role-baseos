@@ -29,6 +29,7 @@ All variables need to have "role_baseos_varname" format
 |role_baseos__users|dict|(notset)"name: "user1", state: "present", groups: "ExtraGroupsForUser1", authorized_key: "ssh-rsa bigrsakey", jail: "no", AllowPass: "no", AllowTunnel: "yes"|
 |role_baseos__sshports|list|"22"|
 |role_baseos__timezone|string|"America/Sao_paulo"|
+|role_baseos__hostname|string|not set|
 
 
 
