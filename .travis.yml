@@ -5,8 +5,6 @@ env:
   # Test package install on all supported OSes.
   - distro: centos7
     playbook: test.yml
-  - distro: centos6
-    playbook: test.yml
 
 script:
   # Configure test script so we can run extra tests after playbook is run.
