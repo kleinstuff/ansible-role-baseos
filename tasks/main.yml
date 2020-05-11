@@ -27,4 +27,3 @@
 - include: ssh_conf.yml
   tags:
     - ssh
-
