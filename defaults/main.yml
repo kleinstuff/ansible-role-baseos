@@ -6,7 +6,7 @@ role_baseos__sshports:
 
 role_baseos__timezone: "America/Sao_Paulo"
 
-role_baseos__packages: "tmux, setroubleshoot-server, vim-enhanced, openscap-scanner, openscap-utils, openscap, bind-utils"
+role_baseos__packages: "libselinux-python, tmux, setroubleshoot-server, vim-enhanced, openscap-scanner, openscap-utils, openscap, bind-utils"
 #role_baseos__users:
   #  - { name: "user1", state: "present", groups: "ExtraGroupsForUser1", authorized_key: "ssh-rsa bigrsakey", jail: "no", AllowPass: "no", AllowTunnel: "yes" }
   #  - { name: "user2", state: "present", groups: "ExtraGroupsForUser2", authorized_key: "ssh-rsa bigrsakey", jail: "no", AllowPass: "no", AllowTunnel: "yes" }

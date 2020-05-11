@@ -2,6 +2,7 @@
 - hosts: all
 
   vars:
+    role_baseos__packages: "libselinux-python, vim-enhanced"
     role_baseos__users:
       - {name: "testuser", state: "present", groups: "wheel", authorized_key: "ssh-rsa AAAAB3NzaC1y= testuser@testcompany.com", jail: "no", AllowPass: "no", AllowTunnel: "yes"}
 
