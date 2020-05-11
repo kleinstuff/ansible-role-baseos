@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kleinstuff/ansible-role-baseos.png)](https://travis-ci.org/kleinstuff/ansible-role-baseos)
+
 ansible-role-baseos
 =========
 

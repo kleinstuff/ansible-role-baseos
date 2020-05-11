@@ -1,4 +1,8 @@
 ---
+- include: base_packages.yml
+  tags:
+    - packages
+
 - include: hostname.yml
   tags:
     - hostname
@@ -23,6 +27,3 @@
   tags:
     - ssh
 
-- include: base_packages.yml
-  tags:
-    - packages
