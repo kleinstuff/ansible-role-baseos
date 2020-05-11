@@ -1,7 +1,6 @@
 ---
-# handlers file for ansible-apm-server
-- name: restart_apm_server
+- name: restart_ssh
   systemd:
-    name: apm-server
+    name: sshd
     state: restarted
     daemon_reload: yes

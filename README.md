@@ -9,8 +9,8 @@ Install and configure some baseos settings
 * Setup sshd_config
 
 This role should not have:
-* Security/Monitoring agents (they should have they're own role)
-* Application configurations (they should have they're own role)
+* Security/Monitoring agents (should have their own role)
+* Application configurations (should have their own role)
 
 Requirements
 ------------
@@ -64,3 +64,5 @@ If you want to suggest changes or request new features, please feel free to crea
 ToDo
 ------------------
  - Add UnitTests (Molecule FTW)
+ - Test Against CentOS7 and CentOS8
+ - Add Suport to (open)SUSE (and apparmor hardening instead of selinux in this case)

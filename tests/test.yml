@@ -1,5 +1,9 @@
 ---
-- hosts: localhost
-  remote_user: root
+- hosts: all
+
+  vars:
+    role_baseos__users:
+      - {name: "testuser", state: "present", groups: "wheel", authorized_key: "ssh-rsa AAAAB3NzaC1y= testuser@testcompany.com", jail: "no", AllowPass: "no", AllowTunnel: "yes"}
+
   roles:
-    - ansible-role-baseos
+    - role_under_test

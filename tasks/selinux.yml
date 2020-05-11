@@ -14,7 +14,7 @@
   when:
     - role_baseos__sebooleans is defined
 
-- name: ROLE BASEOS | SELINUX | Allow listen on ports
+- name: ROLE BASEOS | SELINUX | Allow SSH listen on extra ports
   seport:
     ports: "{{ item }}"
     proto: tcp
