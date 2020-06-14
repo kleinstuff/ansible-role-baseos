@@ -14,7 +14,7 @@
 - include: selinux.yml
   tags:
     - selinux
-  when: (ansible_virtualization_type != 'docker')
+  when: (ansible_virtualization_type != 'docker') and (ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux')
 
 - include: users.yml
   tags:
